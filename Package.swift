@@ -15,12 +15,13 @@ let package = Package(
         .target(
             name: "TrackerRadarKit_Aggregation",
             dependencies: ["TrackerRadarKit"],
+            packageAccess: false,
             swiftSettings: [.define("SCIPIO_PRECOMPILED_BINARY_WRAPPER")]
         ),
         .binaryTarget(
             name: "TrackerRadarKit",
-            url: "https://github.com/swift-precompiled/TrackerRadarKit/releases/download/3.1.0/TrackerRadarKit-3b691c0ad225500b9951615f81c0cd67cad425f92679f393a18302c9472b5aff.xcframework.zip",
-            checksum: "3b691c0ad225500b9951615f81c0cd67cad425f92679f393a18302c9472b5aff"
+            url: "https://github.com/swift-precompiled/TrackerRadarKit/releases/download/3.1.0/TrackerRadarKit-7edc1578fecc8402a40379651e8c7a56f8c228e69b2926c6012f1f9bbd8be21c.xcframework.zip",
+            checksum: "7edc1578fecc8402a40379651e8c7a56f8c228e69b2926c6012f1f9bbd8be21c"
         )
     ]
 )
