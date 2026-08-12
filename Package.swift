@@ -8,7 +8,7 @@ let package = Package(
     products: [
         .library(
             name: "TrackerRadarKit",
-            targets: ["TrackerRadarKit_PrecompiledProduct"]
+            targets: ["TrackerRadarKit"]
         )
     ],
     targets: [
@@ -19,12 +19,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "TrackerRadarKit",
-            url: "https://github.com/swift-precompiled/TrackerRadarKit/releases/download/3.1.0/TrackerRadarKit-0754b8025cd37a593cb6b44134ad5833aeb679f276a7626cbcf7de00896e487f.xcframework.zip",
-            checksum: "0754b8025cd37a593cb6b44134ad5833aeb679f276a7626cbcf7de00896e487f"
-        ),
-        .target(
-            name: "TrackerRadarKit_PrecompiledProduct",
-            dependencies: ["TrackerRadarKit_Aggregation"]
+            url: "https://github.com/swift-precompiled/TrackerRadarKit/releases/download/3.1.0/TrackerRadarKit-3b691c0ad225500b9951615f81c0cd67cad425f92679f393a18302c9472b5aff.xcframework.zip",
+            checksum: "3b691c0ad225500b9951615f81c0cd67cad425f92679f393a18302c9472b5aff"
         )
     ]
 )
